@@ -1,0 +1,115 @@
+.SideBar {
+	width: 300px;
+	height: 100vh;
+	position: fixed;
+	inset: 0;
+	left: 0;
+	z-index: 100;
+	overflow-y: scroll;
+	background: #fff;
+	.container {
+		width: 87%;
+		.sideBar {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			min-height: 100vh;
+			.box {
+				.header {
+					width: 100%;
+					height: 80px;
+					background: #fff;
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					position: sticky;
+					inset: 0;
+					z-index: 1;
+					.icon_ista {
+						display: none;
+					}
+				}
+				nav {
+					padding: 10px 0;
+					display: flex;
+					flex-direction: column;
+					gap: 15px;
+					button {
+						padding: 10px 0;
+						display: flex;
+						align-items: center;
+						gap: 12px;
+						padding: 0 5px;
+						transition: 0.8s;
+						opacity: 0.8;
+						&:hover {
+							background: #a09f9f57;
+							opacity: 1;
+						}
+						&:focus {
+							opacity: 1;
+							span {
+								font-weight: 600;
+							}
+						}
+						span {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+			.footer {
+				width: 100%;
+				height: 50px;
+				background: #fff;
+				position: sticky;
+				bottom: 0;
+				left: 0;
+				z-index: 1;
+				button {
+					padding: 10px 0;
+					display: flex;
+					align-items: center;
+					gap: 12px;
+					padding: 0 5px;
+					transition: 0.8s;
+					position: relative;
+					&:hover {
+						background: #a09f9f57;
+					}
+					span {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+.menu {
+	width: 300px;
+	opacity: 1;
+	position: fixed;
+	bottom: 50px;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background: #e3e3e3;
+	padding: 10px;
+	border-radius: 10px;
+	z-index: 100;
+	&#dark {
+		background: #282727;
+	}
+	button {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		padding: 0 5px;
+		transition: 0.8s;
+		position: relative;
+		&:hover {
+			background: #a09f9f57;
+		}
+	}
+}
